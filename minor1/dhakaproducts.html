@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaka Topi Collection</title>
+    <link rel="stylesheet" href="dhakatopi.css">
+    <!-- Optional: Link to a font like Inter if not already in your main CSS -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <!-- Main Header (can be integrated from your existing header.html) -->
+    <header class="header.html">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo" alt="Website Logo">
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="khada.html">KHADA</a></li>
+                <li><a href="dhakatopi.html" >Dhaka Topi</a></li>
+                <li><a href="dhakaproducts.html"class="active">Dhaka Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+<button id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙</button>
+
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <main class="product-page-content">
+        <h1 class="page-title">Our Exclusive Dhaka Collection</h1>
+
+        <section class="product-grid" id="product-list">
+            <!-- Product cards will be dynamically loaded here or hardcoded -->
+            <div class="product-card" data-id="topi1">
+                <img src="dhaka1.JPG" alt="Dhaka Topi 1">
+                <h3>Classic Red Dhaka Topi</h3>
+                <p class="price">NPR 1,200</p>
+            </div>
+
+            <div class="product-card" data-id="topi2">
+                <img src="dhaka2.JPG" alt="Dhaka Topi 2">
+                <h3>Elegant Blue Dhaka Topi</h3>
+                <p class="price">NPR 1,500</p>
+            </div>
+
+            <div class="product-card" data-id="topi3">
+                <img src="dhaka3.JPG" alt="Dhaka Topi 3">
+                <h3>Traditional Green Dhaka Topi</h3>
+                <p class="price">NPR 1,000</p>
+            </div>
+
+            <div class="product-card" data-id="topi4">
+                <img src="dhaka4.JPG" alt="Dhaka Topi 4">
+                <h3>Modern Black Dhaka Topi</h3>
+                <p class="price">NPR 1,800</p>
+            </div>
+            
+            <div class="product-card" data-id="topi4">
+                <img src="sari1.png" alt="Dhaka Topi 4">
+                <h3>Modern Red Dhaka Sari</h3>
+                <p class="price">NPR 1,800</p>
+                <p class="description">A red sari with a white and multi-colored zigzag patterned border
+</p>
+            </div>
+
+            <div class="product-card" data-id="topi4">
+                <img src="sari2.png" alt="Dhaka Topi 4">
+                <h3>Modern Green Dhaka Sari</h3>
+                <p class="price">NPR 1,800</p>
+                <p class="description">A vibrant green sari featuring a border with a geometric pattern in shades of pink, red, and white.
+</p>
+            </div>
+            <div class="product-card" data-id="topi4">
+                <img src="sari3.png" alt="Dhaka Topi 4">
+                <h3>Modern Orange Dhaka Sari</h3>
+                <p class="price">NPR 1,800</p>
+                <p class="description">An orange sari with a multi-colored checkered border in hues of pink, blue, and white.
+</p>
+            </div>
+            <div class="product-card" data-id="topi4">
+                <img src="sari4.png" alt="Dhaka Topi 4">
+                <h3>Modern Blue Dhaka Sari</h3>
+                <p class="price">NPR 1,800</p>
+                <p class="description"> A blue sari with a geometric border design in shades of blue, grey, and white.
+</p>
+            </div>
+            <div class="product-card" data-id="topi4">
+                <img src="sari6.png" alt="Dhaka Topi 4">
+                <h3>Hakupatasi</h3>
+                <p class="price">NPR 1,800</p>
+                <p class="description">A black sari with red border.</p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Detail Modal (Pop-on Screen) -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <img id="modal-product-image" src="" alt="Product Image">
+                <div class="modal-details">
+                    <h2 id="modal-product-name"></h2>
+                    <p id="modal-product-price" class="price"></p>
+                    <p id="modal-product-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ <footer >
+        <div>
+            <div>
+                <h3>RJ DHAKA COLLECTION</h3>
+                <p>
+                     Preserving Dhaka's heritage.
+                </p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="project.html" >Home</a></li>
+                    <li><a href="aboutus.html" >About Us</a></li>
+                    <li><a href="contactus.html" >Contact</a></li>
+                </ul>
+            </div>
+
+    
+            <div>
+                <h4 >Contact Us</h4>
+                <p >
+                    suchika galli,newroad                    <br>
+                    Email: shreshthashristi726@gmail.com
+                    <br>
+                    Phone: (+977) 9860390455
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100086331722280&mibextid=LQQJ4d" >
+                        <i class="">fb</i>
+                    </a>
+                    <a href="https://www.instagram.com/r.j_dhaka?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==" >
+                        <i class=>insta</i>
+                    </a>
+                
+                </div>
+            </div>
+        </div>
+
+        <div >
+            &copy; 2025 RJ Dhaka Collection. All rights reserved.
+        </div>
+    </footer>
+    <script src="dhakatopi.js"></script>
+</body>
+</html>

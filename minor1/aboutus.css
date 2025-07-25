@@ -1,0 +1,311 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #edd7d8;
+    color: #33020e; /* Changed to a darker color for better contrast in light mode */
+    transition: background 0.3s, color 0.3s;
+}
+
+main {
+    padding: 2em; /* Adjusted padding for better spacing */
+}
+
+/* === HEADER (same style as index.css) === */
+header {
+    background-color: #f8f8f8; /* Light background for header */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    width: 90%; /* Increased width for better responsiveness */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: auto;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px; /* Adjust logo size */
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox for horizontal navigation */
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 15px; /* Adjusted margin for better spacing */
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active { /* Added active state */
+    color: #a33333; /* Highlight color on hover and for active link */
+}
+
+.toggle-btn {
+    background: none;
+    border: 1px solid #33020e; /* Added border for visibility */
+    color: #33020e;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #33020e;
+    color: #f8f8f8;
+}
+
+/* === ABOUT DESCRIPTION FLEX SECTION === */
+.about-description {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    background: #59090a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 2em auto; /* Centered with top/bottom margin */
+    color: #eee9e9; /* Ensures text is visible on the background */
+}
+
+.about-description img {
+    flex-shrink: 0; /* Prevent image from shrinking too much */
+    width: 400px; /* Specific width for the image */
+    height: 450px;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.about-description img:hover {
+    transform: scale(1.03); /* Slightly reduced scale for a subtler effect */
+}
+
+.about-description div {
+    flex: 1;
+    min-width: 300px; /* Ensure text block doesn't get too narrow */
+}
+
+.about-description p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #eee9e9;
+}
+
+/* === FOOTER === */
+ooter {
+            background-color: #30010a; /* Dark gray */
+            color: #ffffff; /* White text */
+            padding: 2rem 1rem; /* Padding top/bottom and left/right */
+            border-top-left-radius: 0.5rem; /* Rounded top-left corner */
+            border-top-right-radius: 0.5rem; /* Rounded top-right corner */
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.06); /* Shadow */
+        }
+
+        .footer-container {
+            max-width: 1280px; /* Max width for content */
+            margin: 0 auto; /* Center the content */
+            display: grid;
+            grid-template-columns: 1fr; /* Single column on small screens */
+            gap: 2rem; /* Gap between columns */
+        }
+
+        @media (min-width: 768px) { /* Medium screens and up */
+            .footer-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            }
+        }
+
+        footer h3 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+
+
+        footer p {
+            color: #a0aec0; /* gray-400 */
+            font-size: 0.875rem; /* text-sm */
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 1.5; /* space-y-2 */
+        }
+
+        footer ul li a {
+            color: #a0aec0; /* gray-400 */
+            text-decoration: none;
+            transition: color 0.3s ease; /* transition-colors duration-300 */
+        }
+
+        footer ul li a:hover {
+            color: #ffffff; /* hover:text-white */
+        }
+    
+
+        .copyright {
+            border-top: 1px solid #4a5568; /* border-t border-gray-700 */
+            margin-top: 2rem; /* mt-8 */
+            padding-top: 1.5rem; /* pt-6 */
+            text-align: center;
+            color: #a0aec0; /* gray-500 */
+            font-size: 0.875rem; /* text-sm */
+        }
+
+
+
+.parallax{
+    text-align: center;
+    font-size: 300%;
+    color:#770303;
+    padding: 1em 0; /* Add padding for better visual */
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+    background-color: #1a1a1a; /* Darker background */
+    color: #e0e0e0; /* Lighter text */
+}
+
+body.dark-mode header {
+    background-color: #2a2a2a; /* Darker header */
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .navbar ul li a {
+    color: #e0e0e0; /* Lighter links in dark mode */
+}
+
+body.dark-mode .navbar ul li a:hover,
+body.dark-mode .navbar ul li a.active {
+    color: #bb86fc; /* A distinct hover/active color for dark mode */
+}
+
+body.dark-mode .toggle-btn {
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+    border-color: #e0e0e0;
+}
+
+body.dark-mode .toggle-btn:hover {
+    background-color: #bb86fc;
+    color: #1a1a1a;
+    border-color: #bb86fc;
+}
+
+body.dark-mode .about-description {
+    background: #333333; /* Darker background for about section */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+body.dark-mode .about-description p {
+    color: #cccccc;
+}
+
+body.dark-mode .parallax {
+    color: #bb86fc; /* Change parallax text color for dark mode */
+}
+
+body.dark-mode footer {
+    background-color: #2a2a2a; /* Darker footer */
+    box-shadow: 0 -4px 6px -1px rgba(255, 255, 255, 0.1), 0 -2px 4px -2px rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode footer h3,
+body.dark-mode footer h4 {
+    color: #e0e0e0;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer ul li a,
+body.dark-mode .social a,
+body.dark-mode .copyright {
+    color: #a0a0a0;
+}
+
+body.dark-mode footer ul li a:hover,
+body.dark-mode .social a:hover {
+    color: #bb86fc;
+}
+
+body.dark-mode .copyright {
+    border-top-color: #4a4a4a;
+}
+
+
+/* === LIGHTBOX (Optional, if used) === */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments for the image */
+@media (max-width: 768px) {
+    .about-description {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center;
+    }
+
+    .about-description img {
+        width: 80%; /* Adjust image width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 400px; /* Prevent it from getting too large */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}

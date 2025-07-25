@@ -1,0 +1,191 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #6d3f3f; /* Light grey background */
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('store.png'); /* Example background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #0e0e0e; /* White text for banner content */
+}
+
+/* Navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px; /* Adjust logo size */
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #a33333; /* Highlight color on hover */
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+/* Content Section */
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    font-style: italic;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* Buttons */
+.content div button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #550404; /* Button border color */
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* For the span hover effect */
+}
+
+.content div button a {
+    text-decoration: none;
+    color: #fff;
+    display: block; /* Make the anchor fill the button */
+    font-size: 16px;
+    z-index: 2; /* Ensure text is above the span */
+    position: relative; /* Positioning context for z-index */
+}
+
+
+.content div button span {
+    background: #470209; /* Hover background color */
+    height: 100%;
+    width: 0; /* Starts at 0 width */
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1; /* Behind the text */
+    transition: 0.5s; /* Smooth transition for hover */
+}
+
+.content div button:hover span {
+    width: 100%; /* Expands to full width on hover */
+}
+
+.content div button:hover {
+    border: 2px solid S#69050d; /* Keep border color on hover */
+}
+footer {
+            background-color: #30010a; /* Dark gray */
+            color: #ffffff; /* White text */
+            padding: 2rem 1rem; /* Padding top/bottom and left/right */
+            border-top-left-radius: 0.5rem; /* Rounded top-left corner */
+            border-top-right-radius: 0.5rem; /* Rounded top-right corner */
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.06); /* Shadow */
+        }
+
+        .footer-container {
+            max-width: 1280px; /* Max width for content */
+            margin: 0 auto; /* Center the content */
+            display: grid;
+            grid-template-columns: 1fr; /* Single column on small screens */
+            gap: 2rem; /* Gap between columns */
+        }
+
+        @media (min-width: 768px) { /* Medium screens and up */
+            .footer-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            }
+        }
+
+        footer h3 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+
+
+        footer p {
+            color: #a0aec0; /* gray-400 */
+            font-size: 0.875rem; /* text-sm */
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 1.5; /* space-y-2 */
+        }
+
+        footer ul li a {
+            color: #a0aec0; /* gray-400 */
+            text-decoration: none;
+            transition: color 0.3s ease; /* transition-colors duration-300 */
+        }
+
+        footer ul li a:hover {
+            color: #ffffff; /* hover:text-white */
+        }
+    
+
+        .copyright {
+            border-top: 1px solid #4a5568; /* border-t border-gray-700 */
+            margin-top: 2rem; /* mt-8 */
+            padding-top: 1.5rem; /* pt-6 */
+            text-align: center;
+            color: #a0aec0; /* gray-500 */
+            font-size: 0.875rem; /* text-sm */
+        }

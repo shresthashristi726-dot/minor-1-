@@ -1,0 +1,524 @@
+/* General Body Styles */
+body {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #f0f2f5; /* Light mode background */
+    color: #333; /* Light mode text color */
+    display: flex; /* Changed to flex for overall layout control */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Main wrapper to push footer down */
+.main-wrapper {
+    flex-grow: 1; /* Allows it to take up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    padding-bottom: 2rem; /* Add padding for space above footer */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #f0f2f5; /* Light mode header background */
+    padding-bottom: 20px; /* Space below h1 */
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 400%;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #640404; /* Light mode header color */
+    text-align: center;
+    margin-top: 50px; /* Adjust top margin as needed */
+    transition: color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px; /* Adjust logo size */
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flex for menu items */
+}
+
+.navbar ul li {
+    margin: 0 25px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black; /* Light mode navbar link color */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #a33333; /* Light mode navbar link hover/active color */
+}
+
+/* Dark Mode Toggle Button (Light Mode appearance) */
+.toggle-btn {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(0,0,0,0.1);
+    color: black; /* Keep text color for consistency */
+}
+
+/* Content Section (Light Mode appearance) */
+.content-section {
+    background-color: #ffffff; /* Still light background for content area */
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 900px;
+    width: 90%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Location Map Section */
+.location-map-section {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex; /* Use flexbox to center iframe */
+    justify-content: center; /* Center horizontally */
+    background-color: #e0e0e0; /* Background for map container */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.location-map-section iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 0;
+    display: block;
+}
+
+/* Contact Info (Light Mode appearance) */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f8f8f8; /* Light mode info item background */
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info h2 {
+    font-size: 200%;
+    font-weight: 600;
+    color: #620303; /* Light mode info heading color */
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #c00744; /* Light mode info text color */
+    text-decoration: none;
+    font-size: 100%;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media (Light Mode appearance) */
+.social-media {
+    text-align: center;
+    color: #640404; /* Light mode social media heading color */
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-button {
+    background-color: transparent;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.social-button a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Make link fill the button */
+}
+
+.social-button.facebook {
+    border-color: #007bff;
+}
+.social-button.facebook a {
+    color: #007bff;
+}
+.social-button.facebook:hover {
+    background-color: #007bff;
+}
+.social-button.facebook:hover a {
+    color: white;
+}
+
+.social-button.instagram {
+    border-color: #b62b44;
+}
+.social-button.instagram a {
+    color: #b62b44;
+}
+.social-button.instagram:hover {
+    background-color: #b62b44;
+}
+.social-button.instagram:hover a {
+    color: white;
+}
+
+
+/* --- Footer Styles (Light Mode appearance) --- */
+footer {
+    background-color: #30010a; /* Light mode footer background */
+    color: #ffffff; /* Light mode footer text */
+    padding: 2rem 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.06);
+    margin-top: auto;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+footer h3, footer h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Light mode footer heading color */
+    transition: color 0.3s ease;
+}
+
+footer p {
+    color: #a0aec0; /* Light mode footer paragraph color */
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #a0aec0; /* Light mode footer link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ffffff; /* Light mode footer link hover color */
+}
+
+.social a {
+    display: inline-block;
+    color: #a0aec0; /* Light mode footer social icon color */
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #ffffff; /* Light mode footer social icon hover color */
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    border-top: 1px solid #4a5568; /* Light mode footer border color */
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #a0aec0; /* Light mode copyright text color */
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* --- Dark Mode Specific Styles --- */
+/* These styles apply when the 'dark-mode' class is added to the body */
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark mode background */
+    color: #e0e0e0; /* Dark mode text color */
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a; /* Dark mode header background */
+}
+
+body.dark-mode header h1 {
+    color: #bb86fc; /* Dark mode header color (purple accent) */
+}
+
+body.dark-mode .navbar ul li a {
+    color: #e0e0e0; /* Dark mode navbar link color */
+}
+
+body.dark-mode .navbar ul li a:hover,
+body.dark-mode .navbar ul li a.active {
+    color: #bb86fc; /* Dark mode navbar link hover/active color */
+}
+
+body.dark-mode .toggle-btn {
+    background-color: #bb86fc; /* Dark mode toggle button background */
+    border-color: #bb86fc; /* Dark mode toggle button border */
+    color: #1a1a1a; /* Dark mode toggle button text */
+}
+
+body.dark-mode .toggle-btn:hover {
+    background-color: #9d5bff; /* Dark mode toggle button hover background */
+    color: #1a1a1a;
+}
+
+body.dark-mode .content-section {
+    background-color: #2a2a2a; /* Dark mode content section background */
+    box-shadow: 0 4px 6px -1px rgba(255,255,255,0.1), 0 2px 4px -2px rgba(255,255,255,0.06);
+}
+
+body.dark-mode .location-map-section {
+    background-color: #3a3a3a; /* Dark mode map container background */
+}
+
+body.dark-mode .info-item {
+    background-color: #3a3a3a; /* Dark mode info item background */
+    box-shadow: 0 2px 4px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .contact-info h2 {
+    color: #bb86fc; /* Dark mode info heading color */
+}
+
+body.dark-mode .contact-info p,
+body.dark-mode .contact-info a {
+    color: #9d5bff; /* Dark mode info text color */
+}
+
+body.dark-mode .social-media {
+    color: #bb86fc; /* Dark mode social media heading color */
+}
+
+body.dark-mode .social-button.facebook {
+    border-color: #61affe; /* Dark mode Facebook button border */
+}
+body.dark-mode .social-button.facebook a {
+    color: #61affe; /* Dark mode Facebook button text */
+}
+body.dark-mode .social-button.facebook:hover {
+    background-color: #61affe;
+}
+body.dark-mode .social-button.facebook:hover a {
+    color: black;
+}
+
+body.dark-mode .social-button.instagram {
+    border-color: #cf6679; /* Dark mode Instagram button border */
+}
+body.dark-mode .social-button.instagram a {
+    color: #cf6679; /* Dark mode Instagram button text */
+}
+body.dark-mode .social-button.instagram:hover {
+    background-color: #cf6679;
+}
+body.dark-mode .social-button.instagram:hover a {
+    color: black;
+}
+
+
+/* --- Footer Styles (Dark Mode appearance) --- */
+body.dark-mode footer {
+    background-color: #2a2a2a; /* Dark mode footer background */
+    color: #e0e0e0; /* Dark mode footer text */
+    box-shadow: 0 -4px 6px -1px rgba(255,255,255,0.1), 0 -2px 4px -2px rgba(255,255,255,0.06);
+}
+
+body.dark-mode footer h3,
+body.dark-mode footer h4 {
+    color: #e0e0e0; /* Dark mode footer heading color */
+}
+
+body.dark-mode footer p,
+body.dark-mode footer ul li a,
+body.dark-mode .social a,
+body.dark-mode .copyright {
+    color: #a0a0a0; /* Dark mode footer paragraph/link/social/copyright color */
+}
+
+body.dark-mode footer ul li a:hover,
+body.dark-mode .social a:hover {
+    color: #bb86fc; /* Dark mode footer link/social hover color */
+}
+
+body.dark-mode .copyright {
+    border-top-color: #4a4a4a; /* Dark mode footer border color */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .content-section {
+        padding: 1.5rem;
+        width: 95%; /* Make it almost full width on small screens */
+    }
+
+    header h1 {
+        font-size: 3em; /* Adjusted for smaller screens */
+    }
+
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .info-item {
+        min-width: unset; /* Remove min-width to allow better wrapping */
+        width: 100%; /* Take full width on small screens */
+    }
+
+    .info-item h2 {
+        font-size: 1.5em;
+    }
+
+    .info-item p {
+        font-size: 0.9em;
+    }
+
+    .social-media h2 {
+        font-size: 1.8em;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-button {
+        width: 80%; /* Adjust width for stacked buttons */
+        max-width: 250px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .navbar ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 15px;
+    }
+
+    .toggle-btn {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr; /* Stack footer columns */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2em;
+        margin-top: 30px;
+    }
+    .content-section {
+        padding: 1rem;
+    }
+    .location-map-section iframe {
+        height: 300px; /* Make map a bit shorter */
+    }
+    .info-item h2 {
+        font-size: 1.2em;
+    }
+    .social-media h2 {
+        font-size: 1.5em;
+    }
+    .social-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
