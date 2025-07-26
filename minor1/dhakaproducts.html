@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhaka Topi Collection</title>
     <link rel="stylesheet" href="dhakatopi.css">
-    <!-- Optional: Link to a font like Inter if not already in your main CSS -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
+   
 </head>
 <body>
-    <!-- Main Header (can be integrated from your existing header.html) -->
     <header class="header.html">
         <div class="navbar">
             <img src="logo.jpg" class="logo" alt="Website Logo">
@@ -20,7 +18,7 @@
                 <li><a href="dhakaproducts.html"class="active">Dhaka Products</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
-<button id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙</button>
+<button id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">Dark Mode</button>
 
                 <li><a href="index.html">Logout</a></li>
             </ul>
@@ -30,86 +28,121 @@
 
     <main class="product-page-content">
         <h1 class="page-title">Our Exclusive Dhaka Collection</h1>
+        
 
         <section class="product-grid" id="product-list">
-            <!-- Product cards will be dynamically loaded here or hardcoded -->
-            <div class="product-card" data-id="topi1">
-                <img src="dhaka1.JPG" alt="Dhaka Topi 1">
-                <h3>Classic Red Dhaka Topi</h3>
+            
+            <div class="product-card" data-id="dhaka1">
+                <img src="dhaka1.JPG" alt="Dhaka1">
+                <h3>Ornate Ikat Pattern</h3>
                 <p class="price">NPR 1,200</p>
+                 <p class="description">comes in a meter<br>A colorful fabric with repeating vertical bands containing ornate ikat-style motifs in reds, oranges, greys, and pinks.</p>
+
             </div>
 
-            <div class="product-card" data-id="topi2">
-                <img src="dhaka2.JPG" alt="Dhaka Topi 2">
-                <h3>Elegant Blue Dhaka Topi</h3>
-                <p class="price">NPR 1,500</p>
+            <div class="product-card" data-id="dhaka2">
+                <img src="dhaka2.JPG" alt="Dhaka2">
+                <h3>Zigzag Stripe Fabric</h3>
+                <p class="price">NPR 450</p>
+                <p class="description">comes in meter<br>A bold red and white textile with horizontal zigzag stripes forming a serrated pattern.
+
+</p>
+
             </div>
 
-            <div class="product-card" data-id="topi3">
-                <img src="dhaka3.JPG" alt="Dhaka Topi 3">
-                <h3>Traditional Green Dhaka Topi</h3>
+            <div class="product-card" data-id="dhaka3">
+                <img src="dhaka3.JPG" alt="Dhaka3">
+                <h3> Abstract Tribal Print</h3>
                 <p class="price">NPR 1,000</p>
-            </div>
+                <p class="description">comes in meter<br>A vibrant red textile with an abstract, repeating tribal or mask-like pattern in orange, white, and hints of greenp>
+           </p>
+                </div>
 
-            <div class="product-card" data-id="topi4">
-                <img src="dhaka4.JPG" alt="Dhaka Topi 4">
-                <h3>Modern Black Dhaka Topi</h3>
-                <p class="price">NPR 1,800</p>
+            <div class="product-card" data-id="dhaka4">
+                <img src="dhaka4.JPG" alt="Dhaka4">
+                <h3>Earthy Diamond Weave</h3>
+                <p class="price">NPR 365</p>
+                <p class="description">comes in meter<br>A textile featuring vertical rows of interlocking diamond shapes in shades of red, orange, brown, and muted blue.</p>
             </div>
             
-            <div class="product-card" data-id="topi4">
-                <img src="sari1.png" alt="Dhaka Topi 4">
+            <div class="product-card" data-id="sari1">
+                <img src="sari1.png" alt="sari1">
                 <h3>Modern Red Dhaka Sari</h3>
                 <p class="price">NPR 1,800</p>
                 <p class="description">A red sari with a white and multi-colored zigzag patterned border
 </p>
             </div>
 
-            <div class="product-card" data-id="topi4">
-                <img src="sari2.png" alt="Dhaka Topi 4">
+            <div class="product-card" data-id="sari2">
+                <img src="sari2.png" alt="sari2">
                 <h3>Modern Green Dhaka Sari</h3>
                 <p class="price">NPR 1,800</p>
                 <p class="description">A vibrant green sari featuring a border with a geometric pattern in shades of pink, red, and white.
 </p>
             </div>
-            <div class="product-card" data-id="topi4">
-                <img src="sari3.png" alt="Dhaka Topi 4">
+            <div class="product-card" data-id="sari3">
+                <img src="sari3.png" alt="sari3">
                 <h3>Modern Orange Dhaka Sari</h3>
                 <p class="price">NPR 1,800</p>
                 <p class="description">An orange sari with a multi-colored checkered border in hues of pink, blue, and white.
 </p>
             </div>
-            <div class="product-card" data-id="topi4">
-                <img src="sari4.png" alt="Dhaka Topi 4">
+            <div class="product-card" data-id="sari4">
+                <img src="sari4.png" alt="sari4">
                 <h3>Modern Blue Dhaka Sari</h3>
                 <p class="price">NPR 1,800</p>
                 <p class="description"> A blue sari with a geometric border design in shades of blue, grey, and white.
 </p>
             </div>
-            <div class="product-card" data-id="topi4">
-                <img src="sari6.png" alt="Dhaka Topi 4">
+            <div class="product-card" data-id="sari6">
+                <img src="sari6.png" alt="sari6">
                 <h3>Hakupatasi</h3>
                 <p class="price">NPR 1,800</p>
                 <p class="description">A black sari with red border.</p>
 
             </div>
+            </div>
+            
+            <div class="product-card" data-id="coat1">
+                <img src="coat1.png" alt="coat1">
+                <h3>Floral White Blazer</h3>
+                <p class="price">NPR 1,000</p>
+                <p class="description">White blazer with laligurans on it</p>
+
+            </div>
+            <div class="product-card" data-id="juwari1">
+                <img src="juwari1.png" alt="juwari1">
+                <h3>Zigzag Black juwari coat</h3>
+                <p class="price">NPR 1,200</p>
+                <p class="description">Black and white zigzag patterned juwari coat.
+
+</p>
+
+            </div>
+            <div class="product-card" data-id="esta1">
+                <img src="esta1.png" alt="esta1">
+                <h3>Multi-colored waistcoat
+</h3>
+                <p class="price">NPR 70</p>
+                <p class="description">Patterned waistcoat with diverse colors.
+
+</p>
+
+            </div>
+            <div class="product-card" data-id="esta2">
+                <img src="esta2.png" alt="esta2">
+                <h3>Red Plaid waistcoat
+</h3>
+                <p class="price">NPR 800</p>
+                <p class="description">Red and black checkered waistcoat.
+
+</p>
+
+            </div>
         </section>
     </main>
 
-    <!-- Product Detail Modal (Pop-on Screen) -->
-    <div id="product-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <div class="modal-body">
-                <img id="modal-product-image" src="" alt="Product Image">
-                <div class="modal-details">
-                    <h2 id="modal-product-name"></h2>
-                    <p id="modal-product-price" class="price"></p>
-                    <p id="modal-product-description"></p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
  <footer >
         <div>
             <div>
@@ -118,16 +151,7 @@
                      Preserving Dhaka's heritage.
                 </p>
             </div>
-            <div>
-                <h4>Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="project.html" >Home</a></li>
-                    <li><a href="aboutus.html" >About Us</a></li>
-                    <li><a href="contactus.html" >Contact</a></li>
-                </ul>
-            </div>
-
-    
+           
             <div>
                 <h4 >Contact Us</h4>
                 <p >

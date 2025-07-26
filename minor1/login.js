@@ -1,5 +1,5 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // 👈 Prevent form submission always
+  event.preventDefault(); // Prevent form submission always
 
   const username = document.getElementById("username").value.trim();
   const password = document.getElementById("password").value.trim();
@@ -20,6 +20,5 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     return;
   }
 
-  // ✅ All validation passed — now redirect to homepage
   window.location.href = "project.html";
 });
